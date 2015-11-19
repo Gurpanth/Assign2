@@ -1,0 +1,24 @@
+<%- include ../partials/header.ejs %>
+
+
+<main class="container">
+    <h1>Contacts</h1>
+
+    <a href="/contacts/addcontact" title="Add Contact">Add new Contact</a>
+
+    <ul class="list-group">
+        <% for (var i = 0; i < contacts.length; i++) { %>
+        <li class="list-group-item">
+            <a href="/contacts/<%= contacts[i]._id %>" title="Read Contact">
+                <%= contacts[i].businessName  %>
+            </a><br />
+            <%= contacts[i].businessEmail  %>
+            <br />
+
+        </li>
+        <% } %>
+    </ul>
+</main>
+
+
+<% include ../partials/footer.ejs %>

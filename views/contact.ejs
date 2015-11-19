@@ -1,0 +1,45 @@
+<%- include partials/header.ejs %>
+  <div class="jumbotron" style="opacity: 0.5; position: relative; bottom: 20px; padding-top:30px;">
+  <div class="container">
+    <h2>Contact</h2>
+  </div>
+</div>
+<!--Building a container for the content-->
+<div class="container"style="height:420px;">
+    <div class="contactInfo" style="float:right;">
+        <address>
+      <strong>Gurpanth's Portfolio</strong><br>
+      364 Duckworth Street<br>
+      L4M 6L7 Barrie, ON<br>
+      <abbr title="Phone">P:</abbr> (705) 220-3002
+    </address>
+     
+    <address>
+      <strong>Gurpanth Singh</strong><br>
+      <a href="mailto:#">gurpanth@hotmail.com</a>
+    </address>
+    </div>
+    <div class="contactForms">
+<form id="contactForm" action="#" style="float:left;">
+	<div class="row">
+		<label for="name">Your name:</label><br />
+		<input value="" size="30" /><br />
+	</div>
+	<div class="row">
+		<label for="email">Your email:</label><br />
+		<input value="" size="30" /><br />
+	</div>
+	<div class="row">
+		<label for="message">Your message:</label><br />
+		<textarea rows="7" cols="30"></textarea><br />
+	</div>
+	<input class="btn btn-primary btn-lg" type="submit" value="Send email" />
+</form>	
+    </div>
+</div>
+</div>
+
+
+</body>
+<%- include partials/footer.ejs %>
+</html>
